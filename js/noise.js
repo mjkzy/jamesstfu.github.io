@@ -46,4 +46,5 @@ const noise = () => {
         setup()
     })()
 };
-noise()
+
+noise();
