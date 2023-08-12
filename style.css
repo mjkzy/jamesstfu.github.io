@@ -1,96 +1,98 @@
-html, body {
-	width: 100%;
-	height: 100%;
-	background-color: black;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
 }
 
 /* background image fading */
 @keyframes background_fade_kf {
-	0% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 0;
+    }
 
-	100% {
-		opacity: 0.7;
-	}
+    100% {
+        opacity: 0.7;
+    }
 }
 
 .background_fade {
-	animation-timing-function: ease-in;
-	animation-name: background_fade_kf;
-	animation-duration: 2.5s;
-	animation-fill-mode: forwards;
-	opacity: 0;
-	visibility: visible;
+    animation-timing-function: ease-in;
+    animation-name: background_fade_kf;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    visibility: visible;
 }
 
 /* background center/adjusting */
 #background {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	z-index: -100;
-	transform: translateX(-50%) translateY(-50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 /* main information section */
 .main_information {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: auto;
-	width: auto;
-	margin: auto;
-	line-height: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    margin: auto;
+    line-height: 0.7;
 }
 
 /* social information section */
 .social_information {
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 30px;
-	justify-content: space-around;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    justify-content: space-around;
 }
 
 /* hyperlink architecture override */
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 /* hyperlink icon */
 .icon {
-	display: table-cell;
-	font-size: 5vh;
-	color: white;
-	text-shadow: 1px 1px 6px black;
-	padding: 40px;
+    display: table-cell;
+    font-size: 5vh;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+    padding: 40px;
 }
 
 .icon:hover {
-	transform: scale(1.15);
+    transform: scale(1.15);
 }
 
 /* iframe override */
 iframe {
-	position: relative;
-	width: 100%;
-	height: 600px;
+    position: relative;
+    width: 100%;
+    height: 600px;
 }
 
 /* small screen/mobile adjusting */
 @media only screen and (max-width:700px) {
-	.icon {
-		font-size: 3vh;
-		padding: inherit;
-		padding-bottom: 5%;
-	}
+    .icon {
+        font-size: 3vh;
+        padding: inherit;
+        padding-bottom: 5%;
+    }
 
-	/* iframe override */
-	iframe {
-		width: inherit; /* i feel like this may be wrong to do, idk */
-	}
+    /* iframe override */
+    iframe {
+        width: inherit;
+        /* i feel like this may be wrong to do, idk */
+    }
 }
