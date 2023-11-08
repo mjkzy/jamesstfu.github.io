@@ -82,17 +82,96 @@ iframe {
     height: 500px;
 }
 
-/* small screen/mobile adjusting */
-@media only screen and (max-width:700px) {
+/* Galaxy Fold width size */
+@media only screen and (min-width: 280px) and (max-width:653px) {
     .icon {
-        font-size: 3vh;
+        font-size: 3.5vh;
         padding: inherit;
         padding-bottom: 5%;
     }
 
-    /* iframe override */
     iframe {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+        width: 250px;
+    }
+}
+
+/* Samsung Galaxy S8+ width size */
+@media only screen and (min-width: 360px) and (max-width:740px) {
+    .icon {
+        font-size: 3.5vh;
+        padding: inherit;
+        padding-bottom: 5%;
+    }
+
+    iframe {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
         width: inherit;
-        /* i feel like this may be wrong to do, idk */
+    }
+}
+
+/* iPhone SE width size */
+@media only screen and (min-width: 375px) and (max-width:667px) {
+    iframe {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        float: none;
+        width: inherit;
+    }
+}
+
+/* Pixel 7 width size */
+@media only screen and (min-width: 412px) and (max-width:896px) {
+    .icon {
+        padding: 10px;
+    }
+
+    iframe {
+        height: 600px;
+    }
+}
+
+/* iPad Mini width size */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .icon {
+        padding: 20px;
+    }
+
+    iframe {
+        height: 650px;
+    }
+}
+
+/* iPad Pro width size */
+@media only screen and (min-width: 1024px) and (max-width:1366px) {
+    .icon {
+        padding: 25px;
+    }
+
+    iframe {
+        height: 800px;
+    }
+}
+
+/* Nest Hub width size */
+@media only screen and (min-width: 1024px) and (max-height:600px) {
+    iframe {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+/* Nest Hub Max width size */
+@media only screen and (min-width: 1024px) and (max-height:800px) {
+    iframe {
+        width: 800px;
+        height: 600px;
     }
 }
